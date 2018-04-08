@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow" >
+
+    
+
+    <RelativeLayout
+        android:id="@+id/rowLayout0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow" >
+
+        <TextView
+            android:id="@+id/title0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rowLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rowLayout0"
+        android:background="@drawable/list_selector_flatcolor" >
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Profile Page"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rowLayout1"
+        android:background="#3d4553" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rowLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/list_selector_flatcolor" >
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Update Profile"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rowLayout2"
+        android:background="#3d4553" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rowLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/list_selector_flatcolor" >
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Invite Friends"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rowLayout3"
+        android:background="#3d4553" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rowLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line3"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/list_selector_flatcolor" >
+
+        <TextView
+            android:id="@+id/title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Friends Request List"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rowLayout4"
+        android:background="#3d4553" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rowLayout5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line4"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/list_selector_flatcolor" >
+
+        <TextView
+            android:id="@+id/title5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Friends List"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rowLayout5"
+        android:background="#3d4553" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rowLayout6"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/line5"
+        android:layout_marginTop="1dp"
+        android:background="@color/yellow"
+        android:onClick="menuBotton1" >
+    </RelativeLayout>
+
+</RelativeLayout>

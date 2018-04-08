@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_id">769698609818018</string>
+    <string name="app_name">GeniusApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="sign_with">Sign in with</string>
+    <string name="have_account">Already have an account ?</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="dont_have_account">Don\'t have an account ?</string>
+    <string name="upload_text">Upload your Photo</string>
+    <string name="com_facebook_loading">Loading...</string>
+    <string name="joinRoom">Join Room</string>
+    <string name="com_facebook_requesterror_password_changed">Your password on Facebook has changed, please reconnect the app with Facebook.</string>
+    <string name="com_facebook_requesterror_reconnect">An error occurred when connecting with Facebook, please reconnect the app with Facebook.</string>
+    <string name="com_facebook_requesterror_web_login">Please log in via https://www.facebook.com or https://m.facebook.com to re-enable the app to connect with Facebook.</string>
+    <string name="com_facebook_requesterror_permissions">An app connection with Facebook failed due to insufficient permissions, please grant the app permissions to perform the operation.</string>
+    <string name="com_facebook_requesterror_relogin">The app is not connected with Facebook, please log in and reconnect this app.</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
+    <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
+    <string name="question">An app connection with Facebook failed due to insufficient permissions.</string>
+    <string name="logout_msg">Are you sure, you want to Logout?</string>
+
+</resources>

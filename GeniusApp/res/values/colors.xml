@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_color">#E7332C </color>
+    <color name="Water_mark">#a1a1a1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="red_blur">#ed6f6b</color>
+    <color name="yellow">#faca46</color>
+    <color name="won_text_color">#406614</color>
+    <color name="lost_text_color1">#616161</color>
+    <color name="lost_text_color2">#7044bd</color>
+    <color name="list_row_default_bg">#faca46</color>
+    <color name="list_row_pressed_bg">#fff15c</color>
+    <color name="list_row_selected_bg">#fff15c</color>
+
+</resources>

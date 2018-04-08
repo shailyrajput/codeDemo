@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imgNetwork"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:visibility="gone" >
+        </com.android.volley.toolbox.NetworkImageView>
+
+        <com.illuminz.utilities.RoundedImageView
+            android:id="@+id/image_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mask_copy" />
+
+        <TextView
+            android:id="@+id/user_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/invite_btn"
+            android:layout_toRightOf="@+id/image_profile"
+            android:text="User A"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/invite_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:text="Play Game"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</RelativeLayout>

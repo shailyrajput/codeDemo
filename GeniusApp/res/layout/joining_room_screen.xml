@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlayout_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color" >
+
+    <RelativeLayout
+        android:id="@+id/rlayout_topView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imgView_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back_selector_button" />
+
+        <TextView
+            android:id="@+id/textView_players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="10 Players"
+            android:textColor="@color/red_blur"
+            android:layout_centerVertical="true"
+            android:textSize="55dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgView_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/small_g_right_corner" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_middleView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlayout_topView" >
+
+        <TextView
+            android:id="@+id/txt_please_wait"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Please wait"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/txt_joining_player"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_please_wait"
+            android:gravity="center"
+            android:text="Players are joining"
+            android:textColor="@color/yellow"
+            android:textSize="55dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_joining_player"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:src="@drawable/small_g_right_corner" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_start"
+        android:layout_below="@+id/rlayout_middleView" >
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:alwaysDrawnWithCache="true"
+            android:gravity="center"
+            android:listSelector="#00000000"
+            android:numColumns="5"
+            android:padding="10dp"
+            android:scrollbars="none"
+            android:scrollingCache="true"
+            android:smoothScrollbar="true"
+            android:stretchMode="columnWidth" >
+        </GridView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/start_selector_button" />
+
+</RelativeLayout>

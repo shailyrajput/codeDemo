@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <TextView
+        android:id="@+id/fakeView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:id="@+id/rlayout_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rlayout_back"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/imgView_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_selector_button" />
+
+            <ImageView
+                android:id="@+id/imgView_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/genius_logo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlayout_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlayout_back"
+            android:layout_centerHorizontal="true" >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imgNetwork"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:visibility="gone" >
+            </com.android.volley.toolbox.NetworkImageView>
+
+            <com.illuminz.utilities.RoundedImageView
+                android:id="@+id/imgView_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/red_plus_button" />
+
+            <ProgressBar
+                android:id="@+id/progressBar_profile"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtView_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlayout_imageView"
+            android:layout_centerHorizontal="true"
+            android:text="@string/upload_text"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/txtView_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView_photo"
+            android:layout_centerHorizontal="true"
+            android:text="Date of Birth"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rlayout_ageDropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView_age"
+            android:layout_centerHorizontal="true" >
+
+            <RelativeLayout
+                android:id="@+id/rlayout_dropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/age_selector_bg" >
+
+                <TextView
+                    android:id="@+id/textView_ageHolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:hint="YYYY-MM-DD"
+                    android:inputType="textNoSuggestions|textCapSentences"
+                    android:singleLine="true"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColorHint="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtView_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlayout_ageDropdown"
+            android:layout_centerHorizontal="true"
+            android:text="Gender"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/onOffLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView_gender"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/gender_selector_bg" >
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/offText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Female"
+                android:textSize="55dp" />
+
+            <TextView
+                android:id="@+id/onText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Male"
+                android:textSize="55dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgView_Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/next_selector_button" />
+    </RelativeLayout>
+
+</RelativeLayout>

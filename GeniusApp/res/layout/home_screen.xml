@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.illuminz.animation.AnimationLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/animation_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/fakeView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:id="@+id/animation_layout_sidebar"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true" >
+
+        <LinearLayout
+            android:id="@+id/MenuList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <include layout="@layout/menu_list_screen" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- To make LinearLayout clickable to trigger onContentTouchedWhenOpening() -->
+
+    <LinearLayout
+        android:id="@+id/animation_layout_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/TopBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color" >
+
+            <TextView
+                android:id="@+id/fakeView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true" />
+
+            <RelativeLayout
+                android:id="@+id/sliderButtonLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="menuBotton" >
+
+                <ImageView
+                    android:id="@+id/menuIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/small_g_right_corner" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLAY"
+                android:textColor="@color/red_blur"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/base_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</com.illuminz.animation.AnimationLayout>

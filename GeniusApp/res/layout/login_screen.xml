@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <RelativeLayout
+        android:id="@+id/rlayout_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rlayout_back"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imgView_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_selector_button" />
+
+            <ImageView
+                android:id="@+id/imgView_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/genius_logo" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtView_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlayout_back"
+            android:layout_centerHorizontal="true"
+            android:text="@string/login"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rlayout_edittxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView_login"
+            android:background="@drawable/login_box" >
+
+            <EditText
+                android:id="@+id/editTxt_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/rlayout_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTxt_email" >
+
+                <EditText
+                    android:id="@+id/editTxt_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toLeftOf="@+id/txtView_show"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="OOOOOOO"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtView_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="Show"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgView_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlayout_edittxt"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/login_main_selector_button" />
+
+        <TextView
+            android:id="@+id/txtView_forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgView_login"
+            android:layout_centerHorizontal="true"
+            android:text="@string/forgot_password"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/llayout_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView_forgotPassword"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgView_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/facebook_selector_button" />
+
+            <ImageView
+                android:id="@+id/imgView_googleplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/google_plus_selector_button" />
+
+            <ImageView
+                android:id="@+id/imgView_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/twitter_selector_button" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtView_haveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llayout_buttons"
+            android:layout_centerHorizontal="true"
+            android:text="@string/dont_have_account"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/imgView_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView_haveAccount"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/signup_main_selector_button" />
+    </RelativeLayout>
+
+</RelativeLayout>
